@@ -1,0 +1,37 @@
+# Cmake
+.idea/
+.vs/
+.vscode/
+build/
+cmake-build-*/
+prefix/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+_deps
+CMakeCache.txt
+CMakeLists.txt.user
+CMakeUserPresets.json
+project-include-after.cmake
+
+# C++
+*.d
+*.slo
+*.lo
+*.o
+*.obj
+*.gch
+*.pch
+*.so
+*.dylib
+*.dll
+*.mod
+*.smod
+*.lai
+*.la
+*.a
+*.lib
+*.exe
+*.out
+*.app
