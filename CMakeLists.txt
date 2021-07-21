@@ -10,6 +10,10 @@ project(
     LANGUAGES NONE
 )
 
+set(CMAKE_INSTALL_PREFIX "${CMAKE_SOURCE_DIR}/install" CACHE PATH "Installation path" FORCE)
+
+find_package(lingo REQUIRED)
+
 include(cmake/project-is-top-level.cmake)
 include(cmake/variables.cmake)
 
@@ -17,6 +21,8 @@ include(cmake/variables.cmake)
 
 add_library(cppsvc_cppsvc INTERFACE)
 add_library(cppsvc::cppsvc ALIAS cppsvc_cppsvc)
+
+target_link_libraries(cppsvc_cppsvc INTERFACE lingo)
 
 set_property(
     TARGET cppsvc_cppsvc PROPERTY

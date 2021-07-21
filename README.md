@@ -6,6 +6,9 @@ This project's goal is to create an easy to use C++ 20 wrapper for the WINAPI fo
 
 See the [BUILDING](BUILDING.md) document.
 
+## Dependencies
+* [Lingo](https://github.com/rick-de-water/Lingo)
+
 # Contributing
 
 See the [CONTRIBUTING](CONTRIBUTING.md)) document.
